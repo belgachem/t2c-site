@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
   const apiKey = process.env.RESEND_API_KEY
   const to = process.env.CONTACT_TO
-  const from = process.env.CONTACT_FROM || 'T2C Engineering <onboarding@resend.dev>'
+  const from = process.env.CONTACT_FROM || 'C2S Engineering <onboarding@resend.dev>'
   if (!apiKey || !to) {
     console.error('[contact] RESEND_API_KEY ou CONTACT_TO manquant')
     return NextResponse.json({ ok: false, error: 'not-configured' }, { status: 500 })

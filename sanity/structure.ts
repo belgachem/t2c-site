@@ -3,7 +3,7 @@ import type { StructureResolver } from 'sanity/structure'
 /** Menu du tableau de bord, en français. */
 export const structure: StructureResolver = (S) =>
   S.list()
-    .title('T2C Engineering')
+    .title('C2S Innovation Lab')
     .items([
       S.documentTypeListItem('project').title('Projets'),
       S.documentTypeListItem('domain').title('Domaines'),

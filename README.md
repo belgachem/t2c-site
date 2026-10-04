@@ -1,4 +1,4 @@
-# T2C Innovation Lab — portfolio de la branche innovation de T2C Engineering
+# C2S Innovation Lab — portfolio de la branche innovation de C2S Engineering
 
 Site vitrine bilingue (FR / EN) avec tableau de bord administrateur intégré sur `/admin`.
 
@@ -14,7 +14,7 @@ Le site est livré **vide** : tout le contenu se gère depuis `/admin`.
 ## 1. Installer sur votre ordinateur (une seule fois)
 
 1. Installez **Node.js 20 ou plus récent** : <https://nodejs.org> (version « LTS »).
-2. Ouvrez un terminal dans ce dossier (`t2c-site`) et lancez :
+2. Ouvrez un terminal dans ce dossier (`c2s-site`) et lancez :
 
    ```bash
    npm install
@@ -23,7 +23,7 @@ Le site est livré **vide** : tout le contenu se gère depuis `/admin`.
 ## 2. Créer le projet Sanity (la base de données)
 
 1. Créez un compte gratuit sur <https://www.sanity.io> (avec votre email professionnel).
-2. Sur <https://www.sanity.io/manage>, cliquez sur **Create new project**, nommez-le `T2C Engineering`.
+2. Sur <https://www.sanity.io/manage>, cliquez sur **Create new project**, nommez-le `C2S Engineering`.
    Créez un dataset nommé `production` (visibilité **public**) s'il n'existe pas déjà.
 3. Copiez le **Project ID** affiché (8 caractères, ex. `ab12cd34`).
 4. Dans ce dossier, copiez `.env.example` en `.env.local`, puis collez l'identifiant :
@@ -50,7 +50,7 @@ npm run dev
 
 ### Premiers contenus conseillés (dans /admin)
 
-1. **Paramètres du site** : nom de la société mère, nom de la branche (« Innovation Lab »), adresse du site principal T2C Engineering, logo, coordonnées, mentions légales.
+1. **Paramètres du site** : nom de la société mère, nom de la branche (« Innovation Lab »), adresse du site principal C2S Engineering, logo, coordonnées, mentions légales.
 2. **Domaines** : Industrie, Santé, Robotique, Machines spéciales… (choisissez une icône).
 3. **Page d'accueil** : titre, texte, chiffres clés, étapes de la démarche.
 4. **À propos** : présentation et fondateur.

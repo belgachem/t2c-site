@@ -124,14 +124,14 @@ export const siteSettings = defineType({
     { name: 'legal', title: 'Mentions légales' },
   ],
   fields: [
-    defineField({ name: 'companyName', title: 'Nom de la société mère', type: 'string', group: 'identity', initialValue: 'T2C Engineering' }),
+    defineField({ name: 'companyName', title: 'Nom de la société mère', type: 'string', group: 'identity', initialValue: 'C2S Engineering' }),
     defineField({ name: 'labName', title: 'Nom de la branche innovation (sous le logo)', type: 'string', group: 'identity', initialValue: 'Innovation Lab' }),
     defineField({
       name: 'mainWebsite',
-      title: 'Adresse du site principal de T2C Engineering',
+      title: 'Adresse du site principal de C2S Engineering',
       type: 'url',
       group: 'identity',
-      description: 'Affiché dans le bandeau du haut et le pied de page (ex. https://www.t2c-engineering.com).',
+      description: 'Affiché dans le bandeau du haut et le pied de page (ex. https://www.c2s-engineering.com).',
     }),
     defineField({ name: 'logo', title: 'Logo (symbole, de préférence SVG ou PNG transparent)', type: 'image', group: 'identity' }),
     defineField({ name: 'description', title: 'Description courte (pied de page et Google)', type: 'localeText', group: 'identity' }),

@@ -7,7 +7,7 @@ import { MenuIcon } from './Icons'
 
 export function Header({ locale, dict, settings }: { locale: Locale; dict: Dictionary; settings: Settings }) {
   const logo = imageUrl(settings.logo, 160) || '/logo-mark.png'
-  const name = settings.companyName || 'T2C Engineering'
+  const name = settings.companyName || 'C2S Engineering'
   const lab = settings.labName || 'Innovation Lab'
   const links = [
     { href: `/${locale}/projets`, label: dict.nav.projects },
@@ -31,7 +31,7 @@ export function Header({ locale, dict, settings }: { locale: Locale; dict: Dicti
       <div className="container header-inner">
         <Link href={`/${locale}`} className="brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={logo} alt="" width={56} height={40} className="brand-mark" />
+          <img src={logo} alt="" width={34} height={40} className="brand-mark" />
           <span className="brand-text">
             <span className="brand-name">{name.toUpperCase()}</span>
             <span className="brand-slogan">{lab.toUpperCase()}</span>

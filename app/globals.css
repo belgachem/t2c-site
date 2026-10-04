@@ -1,5 +1,5 @@
 /* ==========================================================
-   T2C Engineering — feuille de style du site
+   C2S Engineering — feuille de style du site
    ========================================================== */
 
 :root {
@@ -581,7 +581,9 @@ p {
 .hero-innovator-photo img {
   display: block;
   width: 100%;
-  height: auto; /* photo affichée en entier, sans recadrage */
+  aspect-ratio: 3 / 4; /* cadre portrait, plus haut */
+  object-fit: cover;
+  object-position: center top; /* garde toujours la tête visible */
   background: #24456e;
 }
 .hero-innovator-card {

@@ -3,7 +3,7 @@ import { tr, type Dictionary, type Locale } from '@/lib/i18n'
 import type { Settings } from '@/lib/queries'
 
 export function Footer({ locale, dict, settings }: { locale: Locale; dict: Dictionary; settings: Settings }) {
-  const name = settings.companyName || 'T2C Engineering'
+  const name = settings.companyName || 'C2S Engineering'
   const lab = settings.labName || 'Innovation Lab'
   const description = tr(settings.description, locale) || dict.brand.footer
   const address = tr(settings.address, locale)

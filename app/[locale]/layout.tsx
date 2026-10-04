@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = isLocale(locale) ? locale : 'fr'
   const settings = await sanityFetch<Settings>(settingsQuery, {}, {})
-  const parent = settings.companyName || 'T2C Engineering'
+  const parent = settings.companyName || 'C2S Engineering'
   const name = `${parent.split(' ')[0]} ${settings.labName || 'Innovation Lab'}`
   const description = tr(settings.description, loc) || getDictionary(loc).brand.footer
   return {
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: { default: `${name} — ${loc === 'fr' ? 'Essais & prototypes' : 'Tests & prototypes'} · ${parent}`, template: `%s · ${name}` },
     description,
     openGraph: { type: 'website', siteName: name, locale: loc === 'fr' ? 'fr_FR' : 'en_GB', description },
-    icons: { icon: '/logo-mark.png' },
+    icons: { icon: '/icon.png' },
   }
 }
 

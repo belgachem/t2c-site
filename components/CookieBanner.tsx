@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { Dictionary, Locale } from '@/lib/i18n'
 
-const KEY = 't2c-cookie-notice'
+const KEY = 'c2s-cookie-notice'
 
 export function CookieBanner({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const [visible, setVisible] = useState(false)

@@ -11,7 +11,7 @@ import { structure } from './sanity/structure'
 
 export default defineConfig({
   basePath: '/admin',
-  title: 'T2C Engineering — Administration',
+  title: 'C2S Innovation Lab — Administration',
   projectId: projectId || 'a-configurer',
   dataset,
   schema: {
