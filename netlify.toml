@@ -1,0 +1,7 @@
+# Configuration de l'hébergement Netlify (détection automatique de Next.js)
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
