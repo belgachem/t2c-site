@@ -45,7 +45,7 @@ export default async function HomePageRoute({ params }: { params: Promise<{ loca
     : t.process.map((s, i) => ({ key: String(i), title: s.title, text: s.text }))
   const heroImg = heroProject ? imageUrl(heroProject.mainImage, 960, 700) : null
   // Photo : celle du tableau de bord, sinon public/innovateur.jpg (pratique pour tester)
-  const innovatorImg = imageUrl(page.innovatorPhoto, 800, 640) || localPhoto()
+  const innovatorImg = imageUrl(page.innovatorPhoto, 800) || localPhoto()
   const innovatorMessage = tr(page.innovatorMessage, locale)
   const showInnovator = Boolean(innovatorImg || innovatorMessage)
   const about = data.about

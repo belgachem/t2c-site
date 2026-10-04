@@ -581,8 +581,7 @@ p {
 .hero-innovator-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 5 / 4;
-  object-fit: cover;
+  height: auto; /* photo affichée en entier, sans recadrage */
   background: #24456e;
 }
 .hero-innovator-card {
