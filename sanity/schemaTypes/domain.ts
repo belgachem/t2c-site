@@ -30,6 +30,7 @@ export const domain = defineType({
           { title: 'Machines spéciales', value: 'machine' },
           { title: 'Intelligence artificielle', value: 'ai' },
           { title: 'Énergie', value: 'energy' },
+          { title: 'Mobilité électrique / recharge', value: 'mobility' },
         ],
       },
     }),
