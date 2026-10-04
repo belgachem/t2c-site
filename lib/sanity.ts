@@ -17,7 +17,7 @@ export async function sanityFetch<T>(query: string, params: QueryParams, fallbac
   if (!client) return fallback
   try {
     const result = await client.fetch<T>(query, params, {
-      next: { revalidate: 300, tags: [CACHE_TAG] },
+      next: { revalidate: 60, tags: [CACHE_TAG] },
       // Ne jamais bloquer la page plus de 10 s si Sanity ne répond pas
       signal: AbortSignal.timeout(10_000),
     })
