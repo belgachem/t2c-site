@@ -2,14 +2,14 @@ import { NextResponse, type NextRequest } from 'next/server'
 
 const locales = ['fr', 'en']
 
-/** Redirige les adresses sans langue vers /fr (ou /en si le navigateur est en anglais). */
+/** Redirige les adresses sans langue vers la version française (/fr). */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const hasLocale = locales.some((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`))
   if (hasLocale) return NextResponse.next()
 
-  const accept = (request.headers.get('accept-language') || '').toLowerCase()
-  const locale = accept.startsWith('en') ? 'en' : 'fr'
+  // Le français est toujours la langue par défaut (le visiteur peut passer en EN via le bouton)
+  const locale = 'fr'
 
   const url = request.nextUrl.clone()
   url.pathname = `/${locale}${pathname === '/' ? '' : pathname}`
